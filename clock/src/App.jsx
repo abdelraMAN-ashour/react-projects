@@ -5,9 +5,10 @@ import Clock from "./components/Clock/Clock";
 import DigitalClock from "./components/DigitalClock/DigitalClock";
 import TimeZone from "./components/TimeZone/TimeZone";
 
+const currentTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 function App() {
   const [time, setTime] = useState(new Date());
-  const [timeZone, setTimeZone] = useState("Africa/Cairo");
+  const [timeZone, setTimeZone] = useState(currentTimeZone);
   const [nightMode, setNightMode] = useState(false);
   const formatter = new Intl.DateTimeFormat("en-US", {
     month: "short",
