@@ -1,0 +1,24 @@
+.container{
+    color: var(--light-text);
+    text-align: center;
+    font-weight: 600;
+}
+.container div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+.time{
+    font-size: 2.7em;
+}
+.time + p{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.date{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--dark-text);
+}

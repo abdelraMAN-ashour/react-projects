@@ -1,0 +1,93 @@
+.circle{
+    --span-high:15px;
+    --span-low:2px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--bg-light-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.688);
+}
+
+.circle .hoursContainer span{
+    position: absolute;
+    background-color: var(--light-text);
+    display: block;
+    width: var(--span-high);
+    height: var(--span-low);
+}
+.hoursContainer span:first-child{
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.hoursContainer span:nth-child(2){
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%,-50%);
+}
+.hoursContainer span:nth-child(3){
+    width: var(--span-low);
+    height: var(--span-high);
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+}
+.hoursContainer span:nth-child(4){
+    left: 50%;
+    top: 100%;
+    width: var(--span-low);
+    height: var(--span-high);
+    transform: translate(-50%,-100%);
+}
+
+.barHolder{
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: gray;
+}
+
+.bars{
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+}
+
+.bars span{
+    position: absolute;
+    border-radius: 9999px;
+    display: block;
+    height: 5px;
+    transform-origin: left;
+    left: 50%;
+    top: 50%;
+}
+.hours{
+    --angle:0deg;
+    background-color: rgb(37, 37, 80);
+    width:60px;
+    transform: translateY(-50%) rotate(var(--angle));
+}
+.mins{
+    --angle:0deg;
+    background-color: rgb(37, 37, 80);
+    width: 100px;
+    transform:translateY(-50%) rotate(var(--angle));
+}
+
+.secs{
+    transition: transform 0.05s linear;
+    --angle:0deg;
+    width: 100px;
+    background-color: rgb(188, 188, 243);
+    transform: translateY(-50%) rotate(var(--angle));
+}
+    
