@@ -3,7 +3,7 @@ import { continents } from "./continents";
 import classes from "./Filter.module.css";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
-export default function Filter({ onChangeRegion }) {
+export default function Filter({ onChangeRegion ,curRegion }) {
   const [showFilter, setShowFilter] = useState(false);
   const menuRef = useRef(null);
 
@@ -24,7 +24,7 @@ export default function Filter({ onChangeRegion }) {
   return (
     <div className={classes.filter} ref={menuRef}>
       <button onClick={() => setShowFilter((old) => !old)} type="button">
-        <p>Filter by Region</p>
+        <p>{curRegion==='All'?'Filter by Region':curRegion}</p>
         <span>{showFilter ? <FaAngleUp /> : <FaAngleDown />}</span>
       </button>
       <ul

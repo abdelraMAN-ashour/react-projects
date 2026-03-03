@@ -70,7 +70,7 @@ function App() {
           <>
             <div className="controls">
               <SearchBar onFilterCountries={filterCountries} curSearch={searchCountries} />
-              <Filter onChangeRegion={handleRegion} />
+              <Filter onChangeRegion={handleRegion} curRegion={region}/>
             </div>
             {loading && <Loading message="counties" />}
             {error && <ErrorMessage message={error} />}
