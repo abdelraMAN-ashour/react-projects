@@ -69,7 +69,7 @@ function App() {
         {!curCard ? (
           <>
             <div className="controls">
-              <SearchBar onFilterCountries={filterCountries} />
+              <SearchBar onFilterCountries={filterCountries} curSearch={searchCountries} />
               <Filter onChangeRegion={handleRegion} />
             </div>
             {loading && <Loading message="counties" />}

@@ -4,6 +4,9 @@ A modern React application that allows users to explore countries around the wor
 
 This project focuses on clean component architecture, state management, API integration, and responsive UI design.
 
+🚀 **Live Demo:**  
+👉 [Country Explorer on Vercel](https://country-explorer-rust-ten.vercel.app/)
+
 ---
 
 ## 🚀 Features
@@ -19,6 +22,7 @@ This project focuses on clean component architecture, state management, API inte
   - Languages
 - 🏳️ Display country flag
 - 🔗 See bordering countries
+- 📍 View country location on Google Maps
 - 🌙 Dark / Light mode (persisted using localStorage)
 - 📱 Fully responsive design
 - ⚡ Loading & error handling states
@@ -31,6 +35,7 @@ This project focuses on clean component architecture, state management, API inte
 - **CSS Modules**
 - **REST Countries API**
 - **JavaScript (ES6+)**
+- **Vercel** (Deployment)
 
 ---
 
@@ -41,6 +46,7 @@ This project focuses on clean component architecture, state management, API inte
 - Reusable UI components
 - Centralized theme management
 - Defensive rendering for async data
+- Conditional UI rendering for loading and error states
 
 ---
 
@@ -49,4 +55,4 @@ This project focuses on clean component architecture, state management, API inte
 Clone the repository:
 
 ```bash
-git clone https://github.com/abdelraMAN-ashour/eact-projects/rest-countries.git
+git clone https://github.com/abdelraMAN-ashour/react-projects.git
